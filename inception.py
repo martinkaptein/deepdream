@@ -66,7 +66,7 @@ def objective_L2(dst):
 
 #Jitter is best set to 0 in my experience
 #SOME LITTLE SETTINGS
-def make_step(net, step_size=1.6, end='inception_4b/output', jitter=0, clip=True, objective=objective_L2):
+def make_step(net, step_size=1.6, end='inception_4b/output', jitter=32, clip=True, objective=objective_L2):
     
 #function BAK def make_step(net, step_size=1.5, end='inception_4c/output', jitter=32, clip=True, objective=objective_L2):
     '''Basic gradient ascent step.'''
@@ -173,7 +173,7 @@ def objective_guide(dst):
 #GO
 frame = img
 counter = 0
-for i in xrange(8): #change how many times you want to dream inside a dream
+for i in xrange(20): #change how many times you want to dream inside a dream
     frame = deepdream(net, frame, end=end, objective=objective_guide)
     PIL.Image.fromarray(np.uint8(frame)).save("output/%04d.jpg"%counter)
 

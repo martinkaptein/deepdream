@@ -23,18 +23,18 @@ def showarray(a, fmt='jpeg'):
     display(Image(data=f.getvalue()))
 
 
-
+#ANIMAL
 #Here you select the model
-#model_path = '/home/veli/src/caffe/models/bvlc_googlenet/' # substitute your path here >> this are my settings so you have to change them
-#net_fn   = model_path + 'deploy.prototxt'
-#param_fn = model_path + 'bvlc_googlenet.caffemodel'
+model_path = '/home/veli/src/caffe/models/bvlc_googlenet/' # substitute your path here >> this are my settings so you have to change them
+net_fn   = model_path + 'deploy.prototxt'
+param_fn = model_path + 'bvlc_googlenet.caffemodel'
 
 
-
+#PLACES
 #DIFFERENT MODEL (install first!)
-model_path = '/home/veli/src/caffe/models/googlenet_places205/' # substitute your path here >> this are my settings so you have to change them
-net_fn   = model_path + 'deploy_places205.protxt'
-param_fn = model_path + 'googlelet_places205_train_iter_2400000.caffemodel'
+#model_path = '/home/veli/src/caffe/models/googlenet_places205/' # substitute your path here >> this are my settings so you have to change them
+#net_fn   = model_path + 'deploy_places205.protxt'
+#param_fn = model_path + 'googlelet_places205_train_iter_2400000.caffemodel'
 
 
 
@@ -64,7 +64,7 @@ def objective_L2(dst):
     dst.diff[:] = dst.data 
 
 #Jitter is best set to 0 in my experience
-def make_step(net, step_size=1.5, end='inception_5b/output', jitter=32, clip=True, objective=objective_L2):
+def make_step(net, step_size=1.5, end='inception_5a/output', jitter=32, clip=True, objective=objective_L2):
     
 #function BAK def make_step(net, step_size=1.5, end='inception_4c/output', jitter=32, clip=True, objective=objective_L2):
     '''Basic gradient ascent step.'''
@@ -93,7 +93,7 @@ def make_step(net, step_size=1.5, end='inception_5b/output', jitter=32, clip=Tru
 
 
 def deepdream(net, base_img, iter_n=12, octave_n=5, octave_scale=1.4, 
-              end='inception_5b/output', clip=True, **step_params):
+              end='inception_5a/output', clip=True, **step_params):
     #BACKUP high detail: def deepdream(net, base_img, iter_n=12, octave_n=6, octave_scale=1.6,end='inception_5b/pool_proj', clip=True, **step_params):
     #deepdream(net, base_img, iter_n=10, octave_n=7, octave_scale=1.6,end='prob', clip=False, **step_params):
     #function params>>net, base_img, iter_n=10, octave_n=4, octave_scale=1.4, end='inception_5b/5x5', clip=True, **step_params
@@ -143,7 +143,7 @@ frame_i = 0
 
 #h, w = frame.shape[:2]
 #s = 0.05 # scale coefficient
-for i in xrange(25):
+for i in xrange(30):
     frame = deepdream(net, frame)
     PIL.Image.fromarray(np.uint8(frame)).save("output/%04d.jpg"%frame_i)
     #This helps get a better result:
