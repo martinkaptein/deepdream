@@ -64,7 +64,7 @@ def objective_L2(dst):
     dst.diff[:] = dst.data 
 
 #Jitter is best set to 0 in my experience
-def make_step(net, step_size=1.5, end='inception_5a/output', jitter=32, clip=True, objective=objective_L2):
+def make_step(net, step_size=1.5, end='inception_4c/output', jitter=0, clip=True, objective=objective_L2):
     
 #function BAK def make_step(net, step_size=1.5, end='inception_4c/output', jitter=32, clip=True, objective=objective_L2):
     '''Basic gradient ascent step.'''
@@ -93,7 +93,7 @@ def make_step(net, step_size=1.5, end='inception_5a/output', jitter=32, clip=Tru
 
 
 def deepdream(net, base_img, iter_n=12, octave_n=5, octave_scale=1.4, 
-              end='inception_5a/output', clip=True, **step_params):
+              end='inception_4c/output', clip=True, **step_params):
     #BACKUP high detail: def deepdream(net, base_img, iter_n=12, octave_n=6, octave_scale=1.6,end='inception_5b/pool_proj', clip=True, **step_params):
     #deepdream(net, base_img, iter_n=10, octave_n=7, octave_scale=1.6,end='prob', clip=False, **step_params):
     #function params>>net, base_img, iter_n=10, octave_n=4, octave_scale=1.4, end='inception_5b/5x5', clip=True, **step_params
