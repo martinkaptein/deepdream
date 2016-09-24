@@ -1,5 +1,7 @@
 *~
 .ipynb_checkpoints
+.gitignore~
+framesOutput/*
 dream_guide/*
 output/*
 source_pictures/*
