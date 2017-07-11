@@ -25,11 +25,11 @@ layer {
     stride: 2
     weight_filler {
       type: "xavier"
-      std: 0.1
+      std: 0.10000000149
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -57,7 +57,7 @@ layer {
   top: "pool1/norm1"
   lrn_param {
     local_size: 5
-    alpha: 0.0001
+    alpha: 9.99999974738e-05
     beta: 0.75
   }
 }
@@ -79,11 +79,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.1
+      std: 0.10000000149
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -112,11 +112,11 @@ layer {
     kernel_size: 3
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -133,7 +133,7 @@ layer {
   top: "conv2/norm2"
   lrn_param {
     local_size: 5
-    alpha: 0.0001
+    alpha: 9.99999974738e-05
     beta: 0.75
   }
 }
@@ -166,11 +166,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -198,11 +198,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.09
+      std: 0.0900000035763
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -231,11 +231,11 @@ layer {
     kernel_size: 3
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -263,11 +263,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.2
+      std: 0.20000000298
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -296,11 +296,11 @@ layer {
     kernel_size: 5
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -340,11 +340,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.1
+      std: 0.10000000149
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -381,11 +381,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -413,11 +413,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.09
+      std: 0.0900000035763
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -446,11 +446,11 @@ layer {
     kernel_size: 3
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -478,11 +478,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.2
+      std: 0.20000000298
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -511,11 +511,11 @@ layer {
     kernel_size: 5
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -555,11 +555,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.1
+      std: 0.10000000149
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -607,11 +607,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -639,11 +639,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.09
+      std: 0.0900000035763
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -672,11 +672,11 @@ layer {
     kernel_size: 3
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -704,11 +704,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.2
+      std: 0.20000000298
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -737,11 +737,11 @@ layer {
     kernel_size: 5
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -781,11 +781,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.1
+      std: 0.10000000149
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -822,11 +822,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -854,11 +854,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.09
+      std: 0.0900000035763
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -887,11 +887,11 @@ layer {
     kernel_size: 3
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -919,11 +919,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.2
+      std: 0.20000000298
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -952,11 +952,11 @@ layer {
     kernel_size: 5
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -996,11 +996,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.1
+      std: 0.10000000149
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1037,11 +1037,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1069,11 +1069,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.09
+      std: 0.0900000035763
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1102,11 +1102,11 @@ layer {
     kernel_size: 3
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1134,11 +1134,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.2
+      std: 0.20000000298
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1167,11 +1167,11 @@ layer {
     kernel_size: 5
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1211,11 +1211,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.1
+      std: 0.10000000149
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1252,11 +1252,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1284,11 +1284,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.09
+      std: 0.0900000035763
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1317,11 +1317,11 @@ layer {
     kernel_size: 3
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1349,11 +1349,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.2
+      std: 0.20000000298
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1382,11 +1382,11 @@ layer {
     kernel_size: 5
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1426,11 +1426,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.1
+      std: 0.10000000149
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1467,11 +1467,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1499,11 +1499,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.09
+      std: 0.0900000035763
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1532,11 +1532,11 @@ layer {
     kernel_size: 3
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1564,11 +1564,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.2
+      std: 0.20000000298
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1597,11 +1597,11 @@ layer {
     kernel_size: 5
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1641,11 +1641,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.1
+      std: 0.10000000149
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1693,11 +1693,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1725,11 +1725,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.09
+      std: 0.0900000035763
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1758,11 +1758,11 @@ layer {
     kernel_size: 3
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1790,11 +1790,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.2
+      std: 0.20000000298
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1823,11 +1823,11 @@ layer {
     kernel_size: 5
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1867,11 +1867,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.1
+      std: 0.10000000149
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1908,11 +1908,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1940,11 +1940,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.09
+      std: 0.0900000035763
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -1973,11 +1973,11 @@ layer {
     kernel_size: 3
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -2005,11 +2005,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.2
+      std: 0.20000000298
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -2038,11 +2038,11 @@ layer {
     kernel_size: 5
     weight_filler {
       type: "xavier"
-      std: 0.03
+      std: 0.0299999993294
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -2082,11 +2082,11 @@ layer {
     kernel_size: 1
     weight_filler {
       type: "xavier"
-      std: 0.1
+      std: 0.10000000149
     }
     bias_filler {
       type: "constant"
-      value: 0.2
+      value: 0.20000000298
     }
   }
 }
@@ -2122,7 +2122,7 @@ layer {
   bottom: "pool5/7x7_s1"
   top: "pool5/7x7_s1"
   dropout_param {
-    dropout_ratio: 0.4
+    dropout_ratio: 0.40000000596
   }
 }
 layer {

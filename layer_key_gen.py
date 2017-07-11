@@ -24,10 +24,57 @@ def showarray(a, fmt='jpeg'):
     display(Image(data=f.getvalue()))
 
 
+#ANIMAL
 #PLEASE MAKE SURE TO SELECT THE RIGHT MODEL FOR THE KEYS!!!
 model_path = '/home/veli/src/caffe/models/bvlc_googlenet/' # substitute your path here >> this are my settings so you have to change them
 net_fn   = model_path + 'deploy.prototxt'
 param_fn = model_path + 'bvlc_googlenet.caffemodel'
+
+#bvlc_alexnet model
+#Here you select the model
+#model_path = '/home/veli/src/caffe/models/bvlc_alexnet/' # substitute your path here >> this are my settings so you have to change them
+#net_fn   = model_path + 'deploy.prototxt'
+#param_fn = model_path + 'bvlc_alexnet.caffemodel'
+
+#PLACES model
+#DIFFERENT MODEL (install first!)
+#model_path = '/home/veli/src/caffe/models/googlenet_places205/' # substitute your path here >> this are my settings so you have to change them
+#net_fn   = model_path + 'deploy_places205.protxt'
+#param_fn = model_path + 'googlelet_places205_train_iter_2400000.caffemodel'
+
+#PLACES 365 model
+#DIFFERENT MODEL (install first!)
+#model_path = '/home/veli/src/caffe/models/GoogLeNet-places365/' # substitute your path here >> this are my settings so you have to change them
+#net_fn   = model_path + 'deploy_googlenet_places365.prototxt'
+#param_fn = model_path + 'googlenet_places365.caffemodel'
+
+
+#recent mobilenet model
+#DIFFERENT MODEL (install first!)
+#model_path = '/home/veli/src/caffe/models/google_mobilenet/' # substitute your path here >> this are my settings so you have to change them
+#net_fn   = model_path + 'mobilenet_deploy.prototxt'
+#param_fn = model_path + 'mobilenet.caffemodel'
+
+#GoogleNet_SOS model
+#model_path = '/home/veli/src/caffe/models/GoogleNet_SOS/' # substitute your path here >> this are my settings so you have to change them
+#net_fn   = model_path + 'deploy.prototxt'
+#param_fn = model_path + 'GoogleNet_SOS.caffemodel'
+
+#GoogleNet-cars
+#model_path = '/home/veli/src/caffe/models/GoogleNet-cars/' # substitute your path here >> this are my settings so you have to change them
+#net_fn   = model_path + 'deploy.prototxt'
+#param_fn = model_path + 'googlenet_finetune_web_car_iter_10000.caffemodel'
+
+#Places_CNDS_models
+#model_path = '/home/veli/src/caffe/models/Places_CNDS_models/' # substitute your path here >> this are my settings so you have to change them
+#net_fn   = model_path + 'deploy.prototxt'
+#param_fn = model_path + '8conv3fc_DSN.caffemodel'
+
+#BirdSnap
+#model_path = '/home/veli/src/caffe/models/BirdSnap/' # substitute your path here >> this are my settings so you have to change them
+#net_fn   = model_path + 'GoogleNet_birdsnap_6.prototxt'
+#param_fn = model_path + 'GoogleNet_birdsnap_6.caffemodel'
+
 
 # Patching model to be able to compute gradients.
 # Note that you can also manually add "force_backward: true" line to "deploy.prototxt".

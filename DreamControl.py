@@ -60,7 +60,7 @@ def objective_L2(dst):
 
 #Jitter is best set to 0 in my experience
 #SOME LITTLE SETTINGS
-def make_step(net, step_size=1.6, end='inception_3b/output', jitter=0, clip=True, objective=objective_L2):
+def make_step(net, step_size=1.6, end='inception_5b/output', jitter=0, clip=True, objective=objective_L2):
     
 #function BAK def make_step(net, step_size=1.5, end='inception_4c/output', jitter=32, clip=True, objective=objective_L2):
     '''Basic gradient ascent step.'''
@@ -90,7 +90,7 @@ def make_step(net, step_size=1.6, end='inception_3b/output', jitter=0, clip=True
 #///////////////////////////////////////////////////////////////////////////
 #MAIN DEEPDREAM SETTINGS
 #///////////////////////////////////////////////////////////////////////////
-def deepdream(net, base_img, iter_n=12, octave_n=6, octave_scale=1.6, end='inception_3b/output', clip=True, **step_params):
+def deepdream(net, base_img, iter_n=12, octave_n=6, octave_scale=1.6, end='inception_5b/output', clip=True, **step_params):
     #BACKUP high detail: def deepdream(net, base_img, iter_n=12, octave_n=6, octave_scale=1.6,end='inception_5b/pool_proj', clip=True, **step_params):
     #deepdream(net, base_img, iter_n=10, octave_n=7, octave_scale=1.6,end='prob', clip=False, **step_params):
     #function params>>net, base_img, iter_n=10, octave_n=4, octave_scale=1.4, end='inception_5b/5x5', clip=True, **step_params
@@ -130,14 +130,14 @@ def deepdream(net, base_img, iter_n=12, octave_n=6, octave_scale=1.6, end='incep
 
 
 #SELECT HERE THE PICTURE YOU WANT TO DRAW THE DREAM ON:
-img = np.float32(PIL.Image.open('source_pictures/catprofile.jpg'))
+img = np.float32(PIL.Image.open('source_pictures/PhotoScaled.jpg'))
 
 #SELECT HERE THE DREAM GUIDE IMAGE (RECOMMEND 224x224)
-guide = np.float32(PIL.Image.open('dream_guide/catprofile224x224.jpg'))
+guide = np.float32(PIL.Image.open('dream_guide/drawing_girl.jpg'))
 
 #ADVANCED DREAM CONTROL AND FUNCTION DEF
 #original>>end = 'inception_3b/output'
-end = 'inception_3b/output'
+end = 'inception_5b/output'
 h, w = guide.shape[:2]
 src, dst = net.blobs['data'], net.blobs[end]
 src.reshape(1,3,h,w)
@@ -162,9 +162,9 @@ frame = img
 counter = 0
 for i in xrange(8): #change how many times you want to re-feed
     frame = deepdream(net, frame, end=end, objective=objective_guide) #HERE HAPPENS THE MAJORITY OF THE WORK :)
-    PIL.Image.fromarray(np.uint8(frame)).save("output/%04d.jpg"%counter)
+    PIL.Image.fromarray(np.uint8(frame)).save("output/dc%04d.jpg"%counter)
     #Open the file we just created (again)
-    frame = np.float32(PIL.Image.open('output/%04d.jpg'%counter))
+    frame = np.float32(PIL.Image.open('output/dc%04d.jpg'%counter))
     counter += 1
 
 
