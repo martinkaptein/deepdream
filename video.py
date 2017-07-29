@@ -2,8 +2,7 @@
 #THIS PROGRAM WILL ONLY PRODUCE THE FRAMES, YOU WILL NEED TO ENCODE THEM WITH (e.g, ffmpeg)
 #NOTE: This programm bases the video on a single source image (with applied zoom).
 #If you want to convert video to deepdream video you will need to extract frames and
-#dream on them.
-#In the future I might add a script for that
+#dream on them. >> see video-convert.py
 #//////////////////////////////////////////////////////////////////////////////////
 
 # imports and basic notebook setup

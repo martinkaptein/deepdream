@@ -1,3 +1,5 @@
+# This script batch converts frames to deepdream effect
+
 # imports and basic notebook setup
 from cStringIO import StringIO
 import numpy as np
@@ -158,20 +160,24 @@ def deepdream(net, base_img, iter_n=11, octave_n=4, octave_scale=1.4,
     return deprocess(net, src.data[0])
 
 
-#first input
+#USER SETTINGS:
 #///////////////////////////////////////////////////////////////
-img = np.float32(PIL.Image.open('/media/sf_PicturesOSX/video-convert/in-frames/0703.jpg'))
+img = np.float32(PIL.Image.open('/media/sf_PicturesOSX/video-convert/in-frames/0001.jpg'))
+
+#total number of frames
+
+framesum = 3496 #example mentioned in YouTube video
 #///////////////////////////////////////////////////////////////
 
 #folder already there, but just in case I include it (just uncomment)
 #!mkdir output
 frame = img
-frame_i = 703
+frame_i = 1
 
 
 #h, w = frame.shape[:2]
 #s = 0.05 # scale coefficient
-for i in xrange(3496):
+for i in xrange(framesum):
     frame = deepdream(net, frame)
     PIL.Image.fromarray(np.uint8(frame)).save("/media/sf_PicturesOSX/video-convert/out-frames/%04d.jpg"%frame_i)
 	#open the next frame
